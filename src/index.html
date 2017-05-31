@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wheather.com</title>
+  <style type="text/css">
+* {margin: 0; padding: 0;}
+#container {height: 100%; width:100%; font-size: 0;}
+#pos1, #pos2, #pos3, #pos4, #pos5 {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
+#pos1 {width: 20%; }
+#pos2 {width: 20%; }
+#pos3 {width: 20%; }
+#pos4 {width: 20%; }
+#pos5 {width: 20%; }
+</style>
+</head>
+<body>
+<div id="d1">
+<h1>Wheather.com</h1>
+<br>
+<h3>Please enter the city name</h3>
+</div>
+<div id="btngrp">
+    <!--<button onclick="UserAction()">click</button>-->
+  </div>
+  <div id="divnow"></div>
+  <div id="root">
+  </div>
+  <br/>
+  <div id="div3h"></div>
+  <br/>
+
+  <div id="rootForcast">
+  </div>
+<script src="https://fb.me/react-with-addons-15.1.0.js"></script>
+<script src="https://fb.me/react-dom-15.1.0.js"></script>
+<!-- build:js -->
+<script src="src/wheather.js"></script>
+<!-- endbuild -->
+</body>
+</html>
