@@ -7,6 +7,10 @@ var watchify = require('watchify');
 var reactify = require('reactify');
 var streamify = require('gulp-streamify');
 var babelify = require('babelify');
+var install = require("gulp-install");
+ 
+gulp.src(['./bower.json', './package.json'])
+  .pipe(install());
 
 var path = {
   HTML: 'src/index.html',
